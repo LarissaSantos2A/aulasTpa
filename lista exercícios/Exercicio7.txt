@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Exercicio7 {
+	public static void main (String args[]) {
+		Scanner in = new Scanner (System.in);
+		int A[] = new int  [15];
+		int  n, fat=0;
+		n= fat;
+		int B[] = new int  [15];
+		int i= 0, j= 0;
+		for (i=0; i<15;i++) A[i] = i;
+	 for (j=0; j<15; j++) {
+		    	 fat= A[j];
+		    	 n= fat;
+		    	 fat= 1;
+	while(n>1) {
+		   fat = fat*n;
+		   n--;
+	 }
+	 B[j] = fat;
+		    	 }
+		     for (i=0; i<15;i++) {
+		    	 System.out.println((i)+"! = "+B[i]);
+		     }
+	}
+		     }

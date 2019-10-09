@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Exercicio8 {
+	public static void main(String[] args) {
+		Scanner in= new Scanner(System.in);
+		int A[]= new int[10];
+		int B[]= new int[10];
+		int j=0, i=0, S,N;
+		for (i=0;i<10;i++) {
+			System.out.println("Informe o " +(i+1)+ "° valor:");
+			A[i]= in.nextInt();
+		}
+		for (i=0;i<10;i++) {
+			for (j=9;j>=i;j--) {
+				S=0;
+				N=S;
+				while (S<=A[j]) {
+					N+=S;
+					S++;
+				}
+				A[i]=N;
+				
+				}
+			}
+		for (i=0;i<10;i++) 
+			      System.out.print(A[i]+ " ");
+			System.out.println(" ");
+			for (i=0;i<10;i++)
+				System.out.print(B[i]+ "  ");
+				
+			}
+		
+	}
